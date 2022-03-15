@@ -149,7 +149,7 @@ body {
 
 #contentImage1 {
   background-color: var(--contentColor);
-  background-image: url(../Khorne-Bot-Logo-WebP-Website.webp);
+  background-image: url(./Khorne-Bot-Full-Logo-3-PNG.png);
   background-size: contain;
   width: 85vw;
   height: calc(85vw / 3);
