@@ -42,7 +42,7 @@ body {
 }
 
 #logo {
-  background-image: url("https://cdn.glitch.global/be274dd8-a45d-4744-b8d4-fc1f3d450816/Khorne-Bot-Logo-WebP-Website.webp?v=1643923318587");
+  background-image: url(./Khorne-Bot-Logo-WebP-Website.webp);
   background-size: cover;
   left: 0.5vh;
   position: absolute;
