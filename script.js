@@ -5,7 +5,18 @@
  * Written by Khorne <radioactiveaj06@gmail.com>, March 2022
  */
 
+var theme = document.getElementsByTagName('link')[0];
+let desktop = true;
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  theme.setAttribute('href', './styleMobile.css');
+  desktop = false;
+} else {
+  theme.setAttribute('href', './styleDesktop.css');
+  desktop = true;
+}
+
 $(() => {
+  if (desktop) {
     let vh = window.innerHeight / 100;
     let vw = window.innerWidth / 100;
     let headerScroll = Math.floor(10*vh)
@@ -37,5 +48,6 @@ $(() => {
         $(".big").css({"font-size":((16*vh)-window.scrollY) + "px","height":((16*vh)-window.scrollY),"top":(window.scrollY/2),"letter-spacing":(window.scrollY/1.5)})
       }
     });
-  });
+  }
+});
   
