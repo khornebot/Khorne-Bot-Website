@@ -12,7 +12,7 @@ export async function requestStatus(ws) {
     let rawData = await 
     response();
     try {
-    recievedData = JSON.parse(rawData);
+        recievedData = JSON.parse(rawData);
     } catch(err) {
         ws.send(JSON.stringify(new custom_err(4000, err.stack)));
         return "error grabbing data.";
