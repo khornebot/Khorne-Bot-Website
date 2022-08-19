@@ -1,3 +1,9 @@
+/*
+ * Copyright (C) Khorne Bot - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Khorne <radioactiveaj06@gmail.com>, August 2022
+ */
 class custom_err {
     constructor(err_code, err_msg) {
         this.type = "err";

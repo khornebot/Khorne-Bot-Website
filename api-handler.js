@@ -1,3 +1,9 @@
+/*
+ * Copyright (C) Khorne Bot - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Khorne <radioactiveaj06@gmail.com>, August 2022
+ */
 const { WebSocket } = require('ws');
 const { custom_err, status_request, data_request } = require('./template-client.js');
 const ws = new WebSocket('wss://hri7566.info:4686');
