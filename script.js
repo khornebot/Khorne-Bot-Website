@@ -13,7 +13,6 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   theme.setAttribute('href', './styleDesktop.css');
   desktop = true;
 }
-
 $(() => {
   if (desktop) {
     let vh = window.innerHeight / 100;
