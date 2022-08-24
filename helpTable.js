@@ -15,7 +15,3 @@ for (var currentCommand of Object.keys(commandObj)) {
 }
 helpTable += "</tbody></tr></table>";
 document.getElementById('box1').innerHTML += helpTable;
-//<th scope="col">Band</th>
-//<th scope="col">Year formed</th>
-//<th scope="col">No. of Albums</th>
-//<th scope="col">Most famous song</th>

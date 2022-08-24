@@ -235,23 +235,19 @@ th, td {
   border: 0.25vh solid darkslategrey;
   padding: 20px;
 }
-
 #history {
   font-size: 3vh;
 }
-
 #quotes1 {
   text-align: center;
   line-height: 5vh;
   font-size: 3.5vh;
 }
-
 #inviteLabel {
   text-align: center;
   text-shadow: 1px 1px #444444;
   font-size: 5vh;
 }
-
 .invitebtn {
   color: black;
   width: 40%;
