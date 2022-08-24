@@ -232,7 +232,7 @@ tr td:nth-child(5){
   background: #ccc;
 }
 th, td {
-  border: 0.25vh solid darkslategrey;
+  border: 0.25vh solid black;
   padding: 20px;
 }
 #history {
