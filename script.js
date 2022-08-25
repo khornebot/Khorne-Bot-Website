@@ -28,9 +28,6 @@ $(() => {
       $("#logo").css({"height":(6*vh),"width":(6*vh),"top":headerScroll,"left":(headerScroll/2)})
       $(".big").css({"font-size":(6*vh) + "px","height":(6*vh),"top":(headerScroll/2),"letter-spacing":(headerScroll/1.5)})
     }
-    //if (navigator.userAgent.includes("Trident")) {// for IE users only
-    //}
-    
     $(window).scroll(() => {
       if (window.scrollY > headerScroll) {
         doneScrolling = true
