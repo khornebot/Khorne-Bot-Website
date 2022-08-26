@@ -14,4 +14,4 @@ for (var currentCommand of Object.keys(commandObj)) {
     i += 1;
 }
 helpTable += "</tbody></tr></table>";
-document.getElementById('box1').innerHTML += helpTable;
+document.getElementById('tableScroll').innerHTML += helpTable;
