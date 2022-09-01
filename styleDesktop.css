@@ -36,7 +36,7 @@ body {
   text-align: center;
   height: 16vh;
   width: 100%;
-  border: 3px solid #7b7b7b;
+  border: 3px solid #7b7b7b00;
   border-style: none none solid none;
   display: inline-block;
 }
@@ -69,10 +69,10 @@ body {
   right: 3vw;
   width: 15vh;
   height: 6vh;
-  border: 2px solid #7b7b7b;
+  border: 2px solid #7b7b7b00;
   text-align: center;
   font-family: "Orbitron", sans-serif;
-  font-size: 2vh;
+  font-size: 3vh;
 }
 
 .dropbtn {
@@ -87,13 +87,13 @@ body {
   height: 6vh;
   background-color: rgba(150, 150, 150, 0.5);
   backdrop-filter: blur(9px);
-  border: 2px solid #7b7b7b;
+  border: 2px solid #7b7b7b00;
   border-style: none solid solid solid;
   position: relative;
   left: -2px;
   z-index: 1;
   font-family: "Orbitron", sans-serif;
-  font-size: 2vh;
+  font-size: 3vh;
 }
 
 .dropdown:hover {
@@ -266,7 +266,7 @@ th, td {
 #footer {
   background: rgba(177, 177, 177, 0.4);
   backdrop-filter: blur(9px);
-  border: 3px solid #7b7b7b;
+  border: 3px solid #7b7b7b00;
   border-style: solid none none none;
   position: fixed;
   bottom: 0px;
