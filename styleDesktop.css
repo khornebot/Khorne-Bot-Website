@@ -29,7 +29,7 @@ body {
 }
 
 #header {
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(9px);
   background: rgba(177, 177, 177, 0.4);
   position: inherit;
   line-height: 16vh;
@@ -86,7 +86,7 @@ body {
   width: 15vh;
   height: 6vh;
   background-color: rgba(150, 150, 150, 0.5);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(9px);
   border: 2px solid #7b7b7b;
   border-style: none solid solid solid;
   position: relative;
@@ -265,7 +265,7 @@ th, td {
 
 #footer {
   background: rgba(177, 177, 177, 0.4);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(9px);
   border: 3px solid #7b7b7b;
   border-style: solid none none none;
   position: fixed;

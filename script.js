@@ -17,7 +17,7 @@ $(() => {
   if (desktop) {
     let vh = window.innerHeight / 100;
     let vw = window.innerWidth / 100;
-    let headerScroll = Math.floor(10*vh)
+    let headerScroll = Math.floor(9.75*vh)
     let doneScrolling = false;
     if (headerScroll>window.scrollY) {
       $(".dropdown").css("top", (((headerScroll/2) + (window.scrollY/2))-3) + "px")
