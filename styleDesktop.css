@@ -29,7 +29,7 @@ body {
 }
 
 #header {
-  backdrop-filter: blur(9px);
+  backdrop-filter: blur(5px);
   background: rgba(177, 177, 177, 0.4);
   position: inherit;
   line-height: 16vh;
@@ -65,47 +65,50 @@ body {
   color: black;
   line-height: 6vh;
   position: absolute;
-  background-color: rgba(150, 150, 150, 0.5);
+  background-color: rgba(150, 150, 150, 0);
   top: 5vh;
-  right: 3vw;
+  left: 57.5vw;
   width: 15vh;
-  height: 6vh;
+  height: calc(6vh - 2px);
   border: 2px solid #7b7b7b00;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0px;
+}
+.dropdown a {
+  color: black;
+  line-height: 6vh;
+  position: absolute;
+  height: calc(6vh - 2px);
+  top: -2px;
+  width: 15vh;
+  background-color: rgba(150, 150, 150, 0.4);
+  backdrop-filter: blur(3px);
+  border-right: 2px solid rgba(150, 150, 150, 0.3);
+  border-left: 2px solid rgba(150, 150, 150, 0);
+  border-top: 2px solid rgba(150, 150, 150, 0);
+  border-bottom: 2px solid rgba(150, 150, 150, 0);
   text-align: center;
   font-family: "Orbitron", sans-serif;
   font-size: 3vh;
 }
-
-.dropbtn {
-  display: none;
+.dropdown a:nth-child(1) {
+  left: calc(0vh - 2px);
 }
-
-.dropbtn a {
-  color: black;
-  line-height: 6vh;
-  display: block;
-  width: 15vh;
-  height: 6vh;
-  background-color: rgba(150, 150, 150, 0.5);
-  backdrop-filter: blur(9px);
-  border: 2px solid #7b7b7b00;
-  border-style: none solid solid solid;
-  position: relative;
-  left: -2px;
-  z-index: 1;
-  font-family: "Orbitron", sans-serif;
-  font-size: 3vh;
+.dropdown a:nth-child(2) {
+  left: calc(15vh + 2px);
 }
-
-.dropdown:hover {
-  background-color: rgba(140, 140, 140, 0.8);
+.dropdown a:nth-child(3) {
+  left: calc(30vh + 6px);
 }
-
-.dropdown:hover .dropbtn {
-  display: block;
+.dropdown a:nth-child(4) {
+  left: calc(45vh + 10px);
 }
-
-.dropbtn a:hover {
+.dropdown a:nth-child(5) {
+  left: calc(60vh + 14px);
+  border-right: 2px solid #7b7b7b02;
+}
+.dropdown a:hover {
   background-color: rgba(140, 140, 140, 0.8);
 }
 
@@ -272,6 +275,10 @@ th, td {
 
 .spin { animation: spin 1s linear infinite; -webkit-animation: spin 1s linear infinite; -moz-animation: spin 1s linear infinite;
 	-o-animation: spin 1s linear infinite; -ms-animation: spin 1s linear infinite; }
+@keyframes spin {
+0% { transform: rotate(0deg);}
+100% { transform: rotate(360deg);}
+}
 @-webkit-keyframes spin {
 0% { -webkit-transform: rotate(0deg);}
 100% { -webkit-transform: rotate(360deg);}
