@@ -103,9 +103,11 @@ body {
 }
 .dropdown a:nth-child(4) {
   left: calc(45vh + 10px);
+  width: 10vh;
 }
 .dropdown a:nth-child(5) {
-  left: calc(60vh + 14px);
+  left: calc(55vh + 14px);
+  width: 10vh;
   border-right: 2px solid #7b7b7b02;
 }
 .dropdown a:hover {
@@ -173,7 +175,10 @@ body {
   color: #5e5e5e;
   text-decoration: none;
 }
-/* spacing */
+#helpinfo {
+  text-align: center;
+  font-size: 5vh;
+}
 #tableScroll {
   padding: 0px;
 }

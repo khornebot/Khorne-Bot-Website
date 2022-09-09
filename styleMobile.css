@@ -174,7 +174,10 @@ body {
   color: #5e5e5e;
   text-decoration: none;
 }
-/* uwu */
+#helpinfo {
+  text-align: center;
+  font-size: 5vw;
+}
 #tableScroll {
   overflow-x: scroll;
   width: 100%;
