@@ -1,3 +1,9 @@
+/*
+ * Copyright (C) Khorne Bot - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Khorne <radioactiveaj06@gmail.com>, September 2022
+*/
 const ws = new WebSocket('wss://hri7566.info:4686');
 let wsOpen = false;
 try {
