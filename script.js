@@ -18,29 +18,29 @@ $(() => {
     let vh = window.innerHeight / 100;
     let vw = window.innerWidth / 100;
     let headerScroll = Math.floor(9.75*vh);
-    let doneScrolling = false;
+    let doneScrolling = false; // ! on website load figure out header location
     if (headerScroll>window.scrollY) {
       $(".dropdown").css("top", (((headerScroll/2) + (window.scrollY/2))-3) + "px")
       $("#logo").css({"height":((16*vh)-window.scrollY),"width":((16*vh)-window.scrollY),"top":window.scrollY,"left":(window.scrollY/2)});
-      $(".big").css({"font-size":((16*vh)-window.scrollY) + "px","height":((16*vh)-window.scrollY),"top":(window.scrollY/2),"letter-spacing":(window.scrollY/1.5)});
+      $(".big").css({"font-size":((14*vh)-window.scrollY) + "px","height":((14*vh)-window.scrollY),"top":(window.scrollY/2)})//,"letter-spacing":(window.scrollY/1.5)});
     } else {
       $(".dropdown").css("top", headerScroll + "px");
       $("#logo").css({"height":(6*vh),"width":(6*vh),"top":headerScroll,"left":(headerScroll/2)});
-      $(".big").css({"font-size":(6*vh) + "px","height":(6*vh),"top":(headerScroll/2),"letter-spacing":(headerScroll/1.5)});
+      $(".big").css({"font-size":(6*vh) + "px","height":(6*vh),"top":(headerScroll/2)})//,"letter-spacing":(headerScroll/1.5)});
     };
     $(window).scroll(() => {
-      if (window.scrollY > headerScroll) {
+      if (window.scrollY > headerScroll) { // ! After done scrolling
         doneScrolling = true;
         $(".dropdown").css("top", headerScroll + "px");
-        $("#logo").css({"height":(6*vh),"width":(6*vh),"top":headerScroll,"left":(headerScroll/2)});
-        $(".big").css({"font-size":(6*vh) + "px","height":(6*vh),"top":(headerScroll/2),"letter-spacing":(headerScroll/1.5)});
+        $("#logo").css({"height":(6.3*vh),"width":(6.3*vh),"top":headerScroll,"left":(headerScroll/2)});
+        $(".big").css({"font-size":(22*vh) + "px","height":(22*vh),"top":(headerScroll/2)})//,"letter-spacing":(headerScroll/1.5)});
       } else if (window.scrollY < headerScroll) {
         doneScrolling = false;
       };
-      if (!doneScrolling) {
+      if (!doneScrolling) { // ! During scrolling
         $(".dropdown").css("top", ((headerScroll/2) + (window.scrollY/2)) + "px");
         $("#logo").css({"height":((16*vh)-window.scrollY),"width":((16*vh)-window.scrollY),"top":window.scrollY,"left":(window.scrollY/2)});
-        $(".big").css({"font-size":((16*vh)-window.scrollY) + "px","height":((16*vh)-window.scrollY),"top":(window.scrollY/2),"letter-spacing":(window.scrollY/1.5)});
+        $(".big").css({"font-size":((140*vh)-window.scrollY) + "px","height":((140*vh)-window.scrollY),"top":(window.scrollY/2)})//,"letter-spacing":(window.scrollY/1.5)});
       };
     });
   };
