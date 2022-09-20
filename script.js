@@ -7,10 +7,10 @@
 var theme = document.getElementsByTagName('link')[0];
 let desktop = true;
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  theme.setAttribute('href', './styleMobile.css');
+  theme.setAttribute('href', './UniversalStyle.css');
   desktop = false;
 } else {
-  theme.setAttribute('href', './styleDesktop.css');
+  theme.setAttribute('href', './UniversalStyle.css');
   desktop = true;
 }
 $(() => {

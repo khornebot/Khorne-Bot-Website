@@ -1,0 +1,303 @@
+/*
+ * Copyright (C) Khorne Bot - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Khorne <radioactiveaj06@gmail.com>, August 2022
+ */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://use.typekit.net/kqi3bku.css");
+:root {
+  --contentColor: #afafaf
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #bb0a1e;
+  margin: 0;
+  padding: none;
+  font: 20pt Helvetica, sans-serif;
+  font-family: Helvetica, Verdana, sans-serif;
+  text-shadow: 1px 1px #444444;
+}
+
+#fullHeader {
+  position: sticky;
+  top: -10vh;
+}
+
+#header {
+  backdrop-filter: blur(5px);
+  background: rgba(177, 177, 177, 0.4);
+  position: inherit;
+  line-height: 16vh;
+  text-align: center;
+  height: 16vh;
+  width: 100%;
+  border: 3px solid #00000000;
+  border-style: none none none none;
+  display: inline-block;
+}
+
+#logo {
+  background-image: url(./Khorne-Bot-Logo-WebP-Website.webp);
+  background-size: cover;
+  left: 0.5vh;
+  position: absolute;
+}
+
+.big {
+  /* font-family: "Orbitron", sans-serif; */
+  position: absolute;
+  width: 100vw;
+  text-align: left;
+  text-indent: 7vw;
+  font-family: bungee, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  color: black;
+}
+
+.dropdown {
+  color: black;
+  line-height: 6vh;
+  position: absolute;
+  background-color: rgba(150, 150, 150, 0);
+  top: 5vh;
+  left: 57.5vw;
+  width: 15vh;
+  height: calc(6vh - 2px);
+  border: 2px solid #7b7b7b00;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0px;
+}
+.dropdown a {
+  color: black;
+  line-height: 6vh;
+  position: absolute;
+  height: calc(6vh - 2px);
+  top: -2px;
+  width: 15vh;
+  background-color: rgba(150, 150, 150, 0.4);
+  backdrop-filter: blur(3px);
+  border-right: 2px solid rgba(150, 150, 150, 0.3);
+  border-left: 2px solid rgba(150, 150, 150, 0);
+  border-top: 2px solid rgba(150, 150, 150, 0);
+  border-bottom: 2px solid rgba(150, 150, 150, 0);
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3vh;
+}
+.dropdown a:nth-child(1) {
+  left: calc(0vh - 2px);
+}
+.dropdown a:nth-child(2) {
+  left: calc(15vh + 2px);
+}
+.dropdown a:nth-child(3) {
+  left: calc(30vh + 6px);
+}
+.dropdown a:nth-child(4) {
+  left: calc(45vh + 10px);
+  width: 10vh;
+}
+.dropdown a:nth-child(5) {
+  left: calc(55vh + 14px);
+  width: 10vh;
+  border-right: 2px solid #7b7b7b02;
+}
+.dropdown a:hover {
+  background-color: rgba(140, 140, 140, 0.8);
+}
+
+#content {
+  z-index: -1;
+  margin: 2vh auto 8vh;
+  width: 85vw;
+}
+
+.p1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+  color: black;
+  font-weight: 350;
+  font-size: 5vh;
+}
+
+.topbox {
+  padding: 3vh 3vw;
+  background-color: var(--contentColor);
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 0px;
+  font-family: Georgia, Arial, sans-serif;
+  column-count: 2;
+  column-rule: 3px solid #7b7b7b;
+  text-shadow: none;
+}
+
+.topbox p {
+  padding-top: 10px;
+  margin: 0 2vw 2vh;
+}
+
+#info {
+  font-size: 4vh;
+}
+
+#updates {
+  font-size: 4vh;
+}
+
+#contentImage1 {
+  background-color: var(--contentColor);
+  background-image: url(./Khorne-Bot-Full-Logo-3-PNG.png);
+  background-size: contain;
+  width: 85vw;
+  height: calc(85vw / 3);
+  margin: 0 auto 0;
+}
+
+#box1 {
+  display: block;
+  background-color: var(--contentColor);
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  text-shadow: none;
+  margin-top: 0px;
+}
+
+#box1 a {
+  color: #5e5e5e;
+  text-decoration: none;
+}
+#helpinfo {
+  text-align: center;
+  font-size: 5vh;
+}
+#tableScroll {
+  padding: 0px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  font-size: 3.5vh;
+  border-collapse: collapse;
+  border: 0.25vh solid black;
+}
+
+thead th:nth-child(1) {
+  background:#038a8a;
+  border: 0.25vh solid black;
+  width: 10%;
+  font-size: 4vh;
+}
+
+thead th:nth-child(2) {
+  border: 0.25vh solid black;
+  width: 40%;
+  font-size: 4vh;
+}
+
+thead th:nth-child(3) {
+  background: #7f7f7f;
+  border: 0.25vh solid black;
+  width: 10%;
+  font-size: 4vh;
+}
+
+thead th:nth-child(4) {
+  background: #ccc;
+  border: 0.25vh solid black;
+  width: 10%;
+  font-size: 4vh;
+}
+thead th:nth-child(5) {
+  background: #ccc;
+  border: 0.25vh solid black;
+  width: 10%;
+  font-size: 4vh;
+}
+tbody th{
+  background:#038a8a;
+}
+tr td:nth-child(2){
+  font-size: 3vh;
+}
+tr td:nth-child(3){
+  background: #7f7f7f;
+}
+tr td:nth-child(4){
+  background: #ccc;
+}
+tr td:nth-child(5){
+  background: #ccc;
+}
+th, td {
+  border: 0.25vh solid black;
+  padding: 20px;
+}
+#history {
+  font-size: 3vh;
+}
+#quotes1 {
+  text-align: center;
+  line-height: 5vh;
+  font-size: 3.5vh;
+}
+#inviteLabel {
+  text-align: center;
+  text-shadow: 1px 1px #444444;
+  font-size: 5vh;
+}
+.invitebtn {
+  color: black;
+  width: 40%;
+  height: 10vh;
+  background-color: rgba(190, 190, 190);
+  border: 1px solid #7b7b7b;
+  border-radius: 5px;
+  font-size: 4vh;
+  text-align: center;
+  line-height: 10vh;
+  margin: 8px 30% 8px;
+}
+
+.invitebtn:hover {
+  background-color: rgba(177, 177, 177);
+}
+
+#footer a {
+  color: #7b7b7b;
+}
+
+.clear { clear: both; }
+
+.spin { animation: spin 1s linear infinite; -webkit-animation: spin 1s linear infinite; -moz-animation: spin 1s linear infinite;
+	-o-animation: spin 1s linear infinite; -ms-animation: spin 1s linear infinite; }
+@keyframes spin {
+0% { transform: rotate(0deg);}
+100% { transform: rotate(360deg);}
+}
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+0% { -moz-transform: rotate(0deg);}
+100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+0% { -o-transform: rotate(0deg);}
+100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+0% { -ms-transform: rotate(0deg);}
+100% { -ms-transform: rotate(360deg);}
+}
+ 
