@@ -3,6 +3,7 @@ import Head from "next/head";
 import { api } from "~/utils/api";
 import { Container } from "../components/Container";
 import { Layout } from "~/components/Layout";
+import { BotInviteButton } from "~/components/BotInviteButton";
 
 const Home: NextPage = () => {
     return (
@@ -13,9 +14,11 @@ const Home: NextPage = () => {
 
             <Layout>
                 <div className="pt-5 text-center text-3xl text-gray-200">
-                    <p>Welcome to Khorne Bot&apos;s official website!</p>
+                    <p className="mb-3">
+                        Welcome to Khorne Bot&apos;s official website!
+                    </p>
+                    <BotInviteButton />
                 </div>
-
                 <Container>
                     <div className="grid grid-cols-2 items-center justify-normal align-middle text-gray-200">
                         <p className="mb-10 mr-3">
@@ -27,7 +30,7 @@ const Home: NextPage = () => {
                             active development again.
                         </p>
                         <div
-                            className="col-span-2 m-auto content-center justify-center text-center align-middle"
+                            className="col-span-2 m-auto mb-5 content-center justify-center text-center align-middle"
                             style={{
                                 backgroundColor: "#afafaf",
                                 backgroundImage:
@@ -38,6 +41,15 @@ const Home: NextPage = () => {
                             }}
                         />
                     </div>
+
+                    <p>
+                        &quot;Money is just numbers. Why can&apos;t we just put
+                        zeros in our bank accounts?&quot; - Hri7566, 2022
+                    </p>
+                    <p>
+                        &quot;Losing my sanity? Nah I can&apos;t lose something
+                        I never had.&quot; - Khorne
+                    </p>
                 </Container>
             </Layout>
         </>
