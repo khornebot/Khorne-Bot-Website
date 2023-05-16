@@ -6,6 +6,11 @@ import { Layout } from "~/components/Layout";
 import { BotInviteButton } from "~/components/BotInviteButton";
 
 const Home: NextPage = () => {
+    const quotes = [
+        `"Money is just numbers. Why can't we just put zeros in our bank accounts?" - Hri7566, 2022`,
+        `"Losing my sanity? Nah I can't lose something I never had." - Khorne`
+    ];
+
     return (
         <>
             <Head>
@@ -42,14 +47,13 @@ const Home: NextPage = () => {
                         />
                     </div>
 
-                    <p>
-                        &quot;Money is just numbers. Why can&apos;t we just put
-                        zeros in our bank accounts?&quot; - Hri7566, 2022
-                    </p>
-                    <p>
-                        &quot;Losing my sanity? Nah I can&apos;t lose something
-                        I never had.&quot; - Khorne
-                    </p>
+                    {(() => {
+                        let i = 0;
+                        return quotes.map(q => {
+                            i++;
+                            return <p key={i}>{q}</p>;
+                        });
+                    })()}
                 </Container>
             </Layout>
         </>
