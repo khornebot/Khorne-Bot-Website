@@ -14,6 +14,13 @@
  *
  * These allow you to access things when processing a request, like the database, the session, etc.
  */
+
+/**
+ * TODO if we end up using tRPC for the API of the bot,
+ * it needs to be implemented here so that we can get
+ * stuff like bot status, list of commands etc.
+ */
+
 import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
 import { type Session } from "next-auth";
 
